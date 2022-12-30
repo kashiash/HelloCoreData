@@ -58,11 +58,11 @@
 			children = (
 				3FDAD03D295E65DA0086918F /* HelloCoreDataApp.swift */,
 				3FDAD03F295E65DA0086918F /* ContentView.swift */,
+				3FDAD04F295E668C0086918F /* StorageProvider.swift */,
 				3FDAD04C295E663E0086918F /* Model.xcdatamodeld */,
 				3FDAD041295E65DB0086918F /* Assets.xcassets */,
 				3FDAD043295E65DB0086918F /* HelloCoreData.entitlements */,
 				3FDAD044295E65DB0086918F /* Preview Content */,
-				3FDAD04F295E668C0086918F /* StorageProvider.swift */,
 			);
 			path = HelloCoreData;
 			sourceTree = "<group>";
