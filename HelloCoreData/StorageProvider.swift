@@ -20,10 +20,10 @@ class StorageProvider {
             }
         })
     }
-    func saveMovie(named name: String) {
+    func saveMovie(named name: String, title:String) {
       let movie = Movie(context: persistentContainer.viewContext)
-      movie.name = name
-
+        movie.name = name
+        movie.title = title
       do {
         try persistentContainer.viewContext.save()
         print("Movie saved succesfully")

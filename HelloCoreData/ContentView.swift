@@ -10,9 +10,10 @@ import CoreData
 
 struct ContentView: View {
     let storageProvider: StorageProvider
-
+    @State var movieName = ""
     @State var movieTitle = ""
     @State var movies: [Movie] = []
+    @State private var needsRefresh: Bool = false
 
     var body: some View {
       VStack {
@@ -20,12 +21,14 @@ struct ContentView: View {
           .font(.title)
           .padding()
 
-        TextField("Movie name", text: $movieTitle)
+        TextField("Movie name", text: $movieName)
           .padding()
+          TextField("Movie title", text: $movieTitle)
+            .padding()
 
         HStack {
           Button("Save movie") {
-            storageProvider.saveMovie(named: movieTitle)
+              storageProvider.saveMovie(named:  movieName,title: movieTitle)
           }
 
           Spacer()
@@ -37,7 +40,18 @@ struct ContentView: View {
 
         List {
           ForEach(movies) { (movie: Movie) in
-            Text(movie.name ?? "")
+              NavigationLink(
+                  destination: MovieDetail(
+                      movie: movie,
+                      coreDM: storageProvider,
+                      needsRefresh: $needsRefresh
+                  ),
+                  label: {
+                    Text(movie.name ?? "")
+                    Text(movie.title ?? "")
+                  }
+              )
+
           }.onDelete { rows in
             for row in rows {
               let movie = movies[row]
