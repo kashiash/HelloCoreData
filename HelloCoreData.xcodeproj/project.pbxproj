@@ -11,6 +11,8 @@
 		3FDAD040295E65DA0086918F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDAD03F295E65DA0086918F /* ContentView.swift */; };
 		3FDAD042295E65DB0086918F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FDAD041295E65DB0086918F /* Assets.xcassets */; };
 		3FDAD046295E65DB0086918F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FDAD045295E65DB0086918F /* Preview Assets.xcassets */; };
+		3FDAD04E295E663E0086918F /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3FDAD04C295E663E0086918F /* Model.xcdatamodeld */; };
+		3FDAD050295E668C0086918F /* StorageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDAD04F295E668C0086918F /* StorageProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		3FDAD041295E65DB0086918F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FDAD043295E65DB0086918F /* HelloCoreData.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HelloCoreData.entitlements; sourceTree = "<group>"; };
 		3FDAD045295E65DB0086918F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3FDAD04D295E663E0086918F /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		3FDAD04F295E668C0086918F /* StorageProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,9 +58,11 @@
 			children = (
 				3FDAD03D295E65DA0086918F /* HelloCoreDataApp.swift */,
 				3FDAD03F295E65DA0086918F /* ContentView.swift */,
+				3FDAD04C295E663E0086918F /* Model.xcdatamodeld */,
 				3FDAD041295E65DB0086918F /* Assets.xcassets */,
 				3FDAD043295E65DB0086918F /* HelloCoreData.entitlements */,
 				3FDAD044295E65DB0086918F /* Preview Content */,
+				3FDAD04F295E668C0086918F /* StorageProvider.swift */,
 			);
 			path = HelloCoreData;
 			sourceTree = "<group>";
@@ -139,8 +145,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FDAD050295E668C0086918F /* StorageProvider.swift in Sources */,
 				3FDAD040295E65DA0086918F /* ContentView.swift in Sources */,
 				3FDAD03E295E65DA0086918F /* HelloCoreDataApp.swift in Sources */,
+				3FDAD04E295E663E0086918F /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,6 +362,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3FDAD04C295E663E0086918F /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3FDAD04D295E663E0086918F /* Model.xcdatamodel */,
+			);
+			currentVersion = 3FDAD04D295E663E0086918F /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 3FDAD032295E65DA0086918F /* Project object */;
 }
