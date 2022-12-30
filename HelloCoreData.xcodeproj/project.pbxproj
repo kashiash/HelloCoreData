@@ -11,7 +11,7 @@
 		3FDAD040295E65DA0086918F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDAD03F295E65DA0086918F /* ContentView.swift */; };
 		3FDAD042295E65DB0086918F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FDAD041295E65DB0086918F /* Assets.xcassets */; };
 		3FDAD046295E65DB0086918F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FDAD045295E65DB0086918F /* Preview Assets.xcassets */; };
-		3FDAD04E295E663E0086918F /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3FDAD04C295E663E0086918F /* Model.xcdatamodeld */; };
+		3FDAD04E295E663E0086918F /* HelloCoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3FDAD04C295E663E0086918F /* HelloCoreDataModel.xcdatamodeld */; };
 		3FDAD050295E668C0086918F /* StorageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDAD04F295E668C0086918F /* StorageProvider.swift */; };
 /* End PBXBuildFile section */
 
@@ -59,7 +59,7 @@
 				3FDAD03D295E65DA0086918F /* HelloCoreDataApp.swift */,
 				3FDAD03F295E65DA0086918F /* ContentView.swift */,
 				3FDAD04F295E668C0086918F /* StorageProvider.swift */,
-				3FDAD04C295E663E0086918F /* Model.xcdatamodeld */,
+				3FDAD04C295E663E0086918F /* HelloCoreDataModel.xcdatamodeld */,
 				3FDAD041295E65DB0086918F /* Assets.xcassets */,
 				3FDAD043295E65DB0086918F /* HelloCoreData.entitlements */,
 				3FDAD044295E65DB0086918F /* Preview Content */,
@@ -148,7 +148,7 @@
 				3FDAD050295E668C0086918F /* StorageProvider.swift in Sources */,
 				3FDAD040295E65DA0086918F /* ContentView.swift in Sources */,
 				3FDAD03E295E65DA0086918F /* HelloCoreDataApp.swift in Sources */,
-				3FDAD04E295E663E0086918F /* Model.xcdatamodeld in Sources */,
+				3FDAD04E295E663E0086918F /* HelloCoreDataModel.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,13 +364,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		3FDAD04C295E663E0086918F /* Model.xcdatamodeld */ = {
+		3FDAD04C295E663E0086918F /* HelloCoreDataModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				3FDAD04D295E663E0086918F /* Model.xcdatamodel */,
 			);
 			currentVersion = 3FDAD04D295E663E0086918F /* Model.xcdatamodel */;
-			path = Model.xcdatamodeld;
+			path = HelloCoreDataModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
