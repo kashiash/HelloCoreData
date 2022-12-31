@@ -3,22 +3,26 @@
 //  HelloCoreData
 //
 //  Created by Jacek Kosiński G on 31/12/2022.
-//
+//""
 
 import SwiftUI
 
 struct MovieDetail: View {
     let movie: Movie
     let storageManager: StorageProvider
-    @State private var movieName: String = ""
-    @State private var movieTitle: String = ""
-    @Binding var needsRefresh: Bool
     
 
+    @Binding var needsRefresh: Bool
+    
+    @State private var movieName: String = ""
+    @State private var movieTitle: String = ""
+    
     var body: some View {
+     
         VStack {
-            TextField(movie.name ?? "", text: $movieName)
-            TextField(movie.title ?? "", text: $movieTitle)
+            TextField("Name", text: $movieName)
+         
+            TextField("Title", text: $movieTitle)
             Button("Update") {
                 if movieName != "" {
                     movie.title = movieTitle
@@ -27,7 +31,12 @@ struct MovieDetail: View {
                     needsRefresh.toggle()
                 }
             }
+        }.onAppear{
+            self.movieName = movie.name ?? ""
+            
+            self.movieTitle = movie.title ?? ""
         }
+       
     }
 }
 

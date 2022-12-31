@@ -14,6 +14,7 @@
 		3FDAD04E295E663E0086918F /* HelloCoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3FDAD04C295E663E0086918F /* HelloCoreDataModel.xcdatamodeld */; };
 		3FDAD050295E668C0086918F /* StorageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDAD04F295E668C0086918F /* StorageProvider.swift */; };
 		3FDAD052295FAE2E0086918F /* MovieDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDAD051295FAE2E0086918F /* MovieDetail.swift */; };
+		3FDAD054296089DF0086918F /* UIImageTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDAD053296089DF0086918F /* UIImageTransformer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		3FDAD04D295E663E0086918F /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		3FDAD04F295E668C0086918F /* StorageProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageProvider.swift; sourceTree = "<group>"; };
 		3FDAD051295FAE2E0086918F /* MovieDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetail.swift; sourceTree = "<group>"; };
+		3FDAD053296089DF0086918F /* UIImageTransformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageTransformer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				3FDAD043295E65DB0086918F /* HelloCoreData.entitlements */,
 				3FDAD044295E65DB0086918F /* Preview Content */,
 				3FDAD051295FAE2E0086918F /* MovieDetail.swift */,
+				3FDAD053296089DF0086918F /* UIImageTransformer.swift */,
 			);
 			path = HelloCoreData;
 			sourceTree = "<group>";
@@ -153,6 +156,7 @@
 				3FDAD052295FAE2E0086918F /* MovieDetail.swift in Sources */,
 				3FDAD03E295E65DA0086918F /* HelloCoreDataApp.swift in Sources */,
 				3FDAD04E295E663E0086918F /* HelloCoreDataModel.xcdatamodeld in Sources */,
+				3FDAD054296089DF0086918F /* UIImageTransformer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
